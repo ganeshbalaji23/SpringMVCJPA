@@ -6,8 +6,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.Data;
+
 @Table
 @Entity
+@Data
 public class User {
 	
 	@Id
@@ -16,29 +19,5 @@ public class User {
 	private String name;
 	private String dept;
 	private String salary;
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getDept() {
-		return dept;
-	}
-	public void setDept(String dept) {
-		this.dept = dept;
-	}
-	public String getSalary() {
-		return salary;
-	}
-	public void setSalary(String salary) {
-		this.salary = salary;
-	}
-
+	
 }
